@@ -33,8 +33,8 @@ def generate_launch_description():
         executable='cliff_detector_exe',
         parameters=[config],
         remappings=[
-            ('/image', '/camera/depth/image_raw'),
-            ('/camera_info', '/camera/depth/camera_info'),
+            ('/image', '/frontcam/depth/image_rect_raw'),
+            ('/camera_info', '/frontcam/depth/camera_info'),
         ]
     )
     ld.add_action(laserscan_node)
